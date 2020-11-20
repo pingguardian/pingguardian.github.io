@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PingGuardian</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://plus.google.com/117744757773809183517" rel="publisher"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,700' rel='stylesheet'>
+    <style>
+      * {
+        padding:0px;
+        margin:0px;
+      }
+      html {
+        background: #fff;
+        height: 100%;
+      }
+
+      body {
+        font-size:62.5%;
+        font-family: Roboto;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        display: table;
+      }
+
+      h1 {
+        opacity:0;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        color:#003366;
+        font-size:8em;
+        font-weight: 100;
+        word-spacing: 0.08em;
+        text-shadow:4px 4px 1px rgba(0, 0, 0, 0.1);
+      }
+      h1 strong {
+        font-weight: 700;
+      }
+      @media only screen and (max-width : 480px) {
+        h1 {
+          font-size:6em;
+        }
+      }
+    </style>
+    <link href='animate.css' rel='stylesheet'>
+  </head>
+  <body>
+          <h1><strong>ping</strong>guardian</h1>
+
+          <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+          <script>
+          $(document).ready(function() {
+            setTimeout(function(){$('h1').addClass('animated fadeInDown')},500);
+          })
+          </script>
+  </body>
+</html>
